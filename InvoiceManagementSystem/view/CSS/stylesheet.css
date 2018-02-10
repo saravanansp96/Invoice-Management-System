@@ -1,0 +1,53 @@
+.nav-bar {
+	display: flex;
+	background-color: #303F9F;
+	color: white;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.24);
+}
+.nav-bar-element {
+	flex-shrink: 1;
+	flex-grow: 1;
+	text-align: center;
+	padding: 2%;
+	color: white;
+	text-decoration: none;
+}
+body {
+	margin: 0px;
+	font-family: Georgia;
+	color: #757575;
+}
+.container {
+	padding: 2%;
+	margin: 5% 5% auto;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.24);
+}
+.container h3 {
+	text-align: center;
+}
+.container form {
+	margin: 0 auto;
+}
+.nav-bar-button{
+	border: none;
+	height:100%;
+	background-color: #303F9F;
+	color: white;
+	font-family: Georgia;
+	font-size: inherit;
+}
+.container form input {
+	padding: 5%;
+	margin-bottom: 3%;
+}
+.container form input[type="sumbit"]{
+	background-color: #FF5252;
+}
+#submit-button {
+	background-color: #FF4081;
+	border: none;
+	display: flex;
+  	justify-content: center;
+  	margin: 0 auto;
+  	color: white;
+}
