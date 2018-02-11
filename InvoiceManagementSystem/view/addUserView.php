@@ -18,9 +18,9 @@ require 'navBar.php';
 			<label for = "user-password">Password</label><br>
 			<input type = "password" id = "user-password" name = "user-password" required><br>
 			<label>Type of user</label><br>
-			<input type = "radio" name = "user-type" value = "Admin">Admin<br>
-			<input type = "radio" name = "user-type" value = "Employee">Employee<br><br>
-			<input id = "submit-button" type = "submit" value = "Add user" name = "add-user">
+			<label><input class = "radio-Button" type = "radio" name = "user-type" value = "Admin">Admin</label><br>
+			<label><input class = "radio-Button" type = "radio" name = "user-type" value = "Employee">Employee</label><br><br>
+			<input id = "submit-button" type = "submit" value = "ADD USER" name = "add-user">
 		</form></div>';
 }
 ?>

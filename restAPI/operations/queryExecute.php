@@ -32,10 +32,6 @@ function searchProduct($json){
 	}
 }
 
-function displayAllProducts(){
-	
-	
-}
 
 function executeQueryRowCount($query,$bindParams){
 try{
@@ -63,4 +59,6 @@ function executeFetchQuery($query , $bindParams){
 		return "failure";
 	}
 }
+
+
 ?>

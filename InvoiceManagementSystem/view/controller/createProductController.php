@@ -23,7 +23,8 @@ if(isset($_POST['create-product'])){
 	$json['product_quantity'] = $_POST['product-quantity'];
 	$json['quantity_type'] = $_POST['quantity-type'];
 	$json = json_encode($json);
-	echo postData("http://localhost/restAPI/controller/addProductController.php",$json);
+	$response = json_decode(postData("http://localhost/restAPI/controller/addProductController.php",$json),true);
+	echo '<div class = "container"><h3>'.$response['status'].'</h3></div>';
 }
 ?>
 </body>

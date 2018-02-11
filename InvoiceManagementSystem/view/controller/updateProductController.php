@@ -25,8 +25,8 @@ if(isset($_POST['update-product'])){
 	}
 	$json['product_id'] = $_POST['product-id'];
 	$json = json_encode($json);
-	echo postData("http://localhost/restAPI/controller/updateProductController.php",$json);
-	echo '<a href = " ">go back</a>';
+	$response = json_decode( postData("http://localhost/restAPI/controller/updateProductController.php",$json),true);
+	echo '<div class = "container"><h3>'.$response['status'].'</h3></div>';
 }
 ?>
 </body>

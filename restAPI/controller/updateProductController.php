@@ -6,7 +6,7 @@ $alreadySet = 0;
 $errorFlag = 0;
 $query = "update product_table set ";
 if(isset($data['product_quantity']) && trim($data['product_quantity']) != ""){
-		$query = $query."product_quantity = product_quantity + :productQunatity";
+		$query = $query."product_quantity = :productQunatity";
 		$bindParams[':productQunatity'] =  $data['product_quantity'];
 		$alreadySet = 1;
 	}

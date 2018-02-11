@@ -11,7 +11,7 @@ echo '
 </head>
 <body>';
 require 'navBar.php';
-echo '<div class = "container"><h3>Add product</h3><br>
+echo '<div class = "container"><h3>Add product</h3>
 	<form method = "post" action = "../controller/createProductController.php">
 		<label for = "product-name">Product Name</label><br>
 		<input type = "text" id = "product-name" name = "product-name" required><br>
@@ -21,7 +21,7 @@ echo '<div class = "container"><h3>Add product</h3><br>
 		<input type = "text" id = "product-quantity" name ="product-quantity" required><br>
 		<label for = "quantity-type">Quantity Type</label><br>
 		<input type = "text" id = "quantity-type" name ="quantity-type" required><br>
-		<input id = "submit-button" type = "submit" value ="Add product" name = "create-product"><br>
+		<input id = "submit-button" type = "submit" value ="ADD PRODUCT" name = "create-product"><br>
 	</form>
 	</div>
 </body>

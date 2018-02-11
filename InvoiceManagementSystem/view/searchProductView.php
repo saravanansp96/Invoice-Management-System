@@ -14,7 +14,7 @@ function searchProductView(){
 	<form method = "post" action = "../controller/searchProductController.php">
 		<label for = "product-id">Enter the product id</label><br>
 		<input type = "number" name = "product-id" id = "product-id" required><br>
-		<input id = "submit-button" type = "submit" value = "search product" name = "search-product">
+		<input id = "submit-button" type = "submit" value = "SEARCH PRODUCT" name = "search-product">
 	</form></div>
 </body>
 </html>';

@@ -18,6 +18,7 @@
 </head>
 <body>
 	<form method = "post" action = "./view/controller/loginController.php">
+		<h2>ABC SUPERMARKET</h2>
 		<h3>INVOICE MANAGEMENT SYSTEM</h3>
 		<h3>LOG IN</h3>
 		<input type = "text" id = "user-id" name = "user-id" placeholder="User Id" required><br>

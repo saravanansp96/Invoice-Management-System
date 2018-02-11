@@ -19,7 +19,7 @@ echo '<div class = "container"><h3>Update Product</h3>
 		<input type = "number" name = "product-quantity" id = "product-quantity"><br> 
 		<label for = "product-price">Enter the product price</label><br>
 		<input type = "number" name = "product-price" id = "product-price"><br>
-		<input id = "submit-button" type = "submit" value = "update product" name = "update-product">
+		<input id = "submit-button" type = "submit" value = "UPDATE PRODUCT" name = "update-product">
 	</form></div>
 </body>
 </html>';

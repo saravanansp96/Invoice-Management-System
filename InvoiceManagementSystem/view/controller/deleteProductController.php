@@ -22,7 +22,8 @@ if(isset($_POST['delete-product'])){
 	$json = array();
 	$json['product_id'] = $product_id;
 	$json = json_encode($json);
-	echo postData("http://localhost/restAPI/controller/deleteProductController.php",$json);
+	$response = json_decode(postData("http://localhost/restAPI/controller/deleteProductController.php",$json),true);
+	echo '<div class = "container"><h3>'.$response['status'].'</h3></div>';
 }
 ?>
 </body>

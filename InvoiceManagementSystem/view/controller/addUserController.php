@@ -24,9 +24,14 @@ if(isset($_POST['add-user'])){
 	if(isset($_POST['user-type'])){
 		$json['user_type'] = $_POST['user-type'];
 		$json = json_encode($json);
-		echo postData("http://localhost/restAPI/controller/addUserController.php",$json);
+		$response = json_decode(postData("http://localhost/restAPI/controller/addUserController.php",$json),true);
+		echo '<div class = "container" >
+		<h3>'.$response['status'].'</h3>
+		<h3>The User Id is :'.$response['userId'].'</h3>
+		<h3>'.$_POST['user-name'].' is an '.$_POST['user-type'].'</h3>
+		</div>';
 	}else {
-		echo "unable to add user, user details is missing";
+		echo "<div class = \"container\"><h3>unable to add user, user details is missing</h3></div>";
 	}
 }
 ?>

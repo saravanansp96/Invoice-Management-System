@@ -27,9 +27,11 @@
 		<a class = "nav-bar-element" href = "addUser.php"><div>Add user</div></a>
 		<a class = "nav-bar-element" href = "../controller/logout.php"><div>Log Out</div></a>
 	</div>
-	<div>
-		<h1>Admin Portal</h1><br>
-		<h1>Welcome <?php echo $_SESSION['name'];  ?></h1>
+	<div class = "container">
+		<h2>ABC SUPER MARKET</h2>
+		<h3>Admin Portal</h3>
+		<h3>Welcome <?php echo $_SESSION['name'];  ?></h3>
+		<h4>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</h4>
 	</div>
 </body>
 </html>

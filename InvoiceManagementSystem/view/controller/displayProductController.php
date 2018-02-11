@@ -21,7 +21,7 @@ if(isset($_POST['display-all'])){
 	$json = json_decode($json,true);
 	if($json['status']=="success"){
 		$json = $json['product'];
-	echo '<h3>Product Details</h3>
+	echo '<div class = "container"><h3>Product Details</h3>
 		<table>
 			<tr>
 				<th>Product Id</th>
@@ -37,6 +37,7 @@ if(isset($_POST['display-all'])){
 		echo "<h3>No products exists</h3>";
 	}
 }
+echo "</div>"
 ?>
 </body>
 </html>
