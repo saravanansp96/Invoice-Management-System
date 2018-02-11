@@ -22,6 +22,7 @@
 		<a class = "nav-bar-element" href = "deleteProduct.php"><div>Delete Product</div></a>
 		<a class = "nav-bar-element" href = "searchProduct.php"><div>Search Product</div></a>
 		<form action = "../controller/displayProductController.php" method = "post"><input class = "nav-bar-button" type = "submit" name = "display-all" value = "Display All Products"></form>
+		<form action = "../controller/createInvoice.php" method = "post"><input class = "nav-bar-button" type = "submit" name = "create-invoice" value = "Create Invoice"></form>
 		<a class = "nav-bar-element" href = "../controller/logout.php"><div>Log Out</div></a>
 	</div>
 	<div>
