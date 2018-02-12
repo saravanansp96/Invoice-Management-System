@@ -42,11 +42,16 @@ body {
 }
 .nav-bar-button{
 	border: none;
+	flex-shrink: 1;
+	flex-grow: 1;
 	background-color: #303F9F;
 	color: white;
 	font-family: Georgia;
 	font-size: inherit;
-	height: 95%;
+	height: 100%;
+}
+.nav-bar-button:hover {
+	cursor: pointer;
 }
 .container form input {
 	padding: 3%;
@@ -82,4 +87,27 @@ body {
 .container td , .container th {
 	padding: 3%;
 	text-align: center;
+}
+.display-none {
+	display: none;
+}
+.innvoice-button {
+	background-color: #FF4081;
+	border: none;
+	display: flex;
+  	justify-content: center;
+  	margin: 5% auto;
+  	color: white;
+  	width: 25%;
+  	padding: 2%;
+}
+.innvoice-button:hover {
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.24);
+	cursor: pointer;
+}
+.invoice-container {
+	margin: 0 auto;
+}
+.invoice-container th , .invoice-container td  {
+	padding: 2%;
 }

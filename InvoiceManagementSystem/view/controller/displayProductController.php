@@ -30,7 +30,9 @@ if(isset($_POST['display-all'])){
 				<th>Quantity</th>
 			</tr>';
 	for($i = 0; $i < count($json);$i++){
+		if($json[$i]['product_quantity']>0){
 		echo "<tr><td>".$json[$i]['product_id']."</td><td>".$json[$i]['product_name']."</td><td>".$json[$i]['product_price']."</td><td>".$json[$i]['product_quantity'].$json[$i]['quantity_type']."</td><tr>";
+	}
 	}
 	echo "</table>";
 	}else {

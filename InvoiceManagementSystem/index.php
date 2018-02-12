@@ -24,6 +24,12 @@
 		<input type = "text" id = "user-id" name = "user-id" placeholder="User Id" required><br>
 		<input type = "password" id = "user-password" name = "user-password" placeholder="Password" required><br>
 		<input type = "submit" value = "LOG IN" name = "login" class = "login-button">
+		<?php 
+		if(isset($_SESSION['fail'])){
+			echo "<h5 class = \"color-red\">".$_SESSION['fail']."</h5>";
+			unset($_SESSION['fail']);
+		}
+		?>
 	</form>
 </body>
 </html>

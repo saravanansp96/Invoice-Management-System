@@ -22,7 +22,17 @@ if(isset($_POST['search-product'])){
 	$json['product_id'] = $product_id;
 	$json = json_encode($json);
 	$response = json_decode(postData("http://localhost/restAPI/controller/readProductsController.php",$json),true);
-	echo '<div class = "container"><h3>'.$response['status'].'</h3></div>';
+	echo '<div class = "container">';
+	if($response['status'] == "success"){
+		echo '<h3>Product Details</h3>';
+		echo '<table><tr><td><h3>Product Id: </h3></td><td><h3>'.$response['product'][0]['product_id'].'</h3></td></tr>';
+		echo '<tr><td><h3>Product Name: </h3></td><td><h3>'.$response['product'][0]['product_name'].'</h3></td></tr>';
+		echo '<tr><td><h3>Product Price</h3></td><td><h3>'.$response['product'][0]['product_price'].'</h3></td></tr>';
+		echo '<tr><td><h3>Product Quantity</h3></td><td><h3>'.$response['product'][0]['product_quantity'].'</h3></td></tr></table>';
+	}else {
+		echo '<h3>No such Product Exists</h3>';
+	}
+	echo '</div>';
 }
 ?>
 </body>

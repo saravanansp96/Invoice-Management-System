@@ -55,7 +55,7 @@ if(count($noSuchProductExists) !=0 || count($insufficientStock) != 0){
 		}
 	}
 	if($breakFlag == 0){
-		$response['status'] = "successfully created invoice";
+		$response['status'] = "success";
 		$invoice['total_amount'] = $total;
 		$response['invoice'] = $invoice;
 		echo json_encode($response);

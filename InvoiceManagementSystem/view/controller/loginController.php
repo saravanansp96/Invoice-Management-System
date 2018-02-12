@@ -8,12 +8,12 @@ require '../util.php';
 		$userDetails = postData("http://localhost/restAPI/controller/loginController.php",$data);
 		$userDetails = json_decode($userDetails,true);
 		var_dump($userDetails);
-		if($userDetails == "failed") {
-			echo "invalid credentials";
-			echo "<a href = '../../index.php'>go back</a>";
+		session_start();
+		if($userDetails['status'] == "failed") {
+			$_SESSION['fail'] = "inavlid username or password!!";
+			header("Location: ../../index.php");
 		}
 		else{
-			session_start();
 			$_SESSION['id'] = $userDetails['user_id'];
 			$_SESSION['name'] = $userDetails['user_name'];
 			$_SESSION['type'] = $userDetails['user_type'];
