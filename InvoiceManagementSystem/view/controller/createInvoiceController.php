@@ -32,7 +32,7 @@ if($_POST['create-invoice']) {
 			echo "<tr><td>".$invoice[$i]['product_name'] ."</td><td>". $invoice[$i]['product_price'] . "</td><td>" . $invoice[$i]['product_quantity'] ."</td><td>".$invoice[$i]['product_quantity']*$invoice[$i]['product_price']."</td></tr>";
 			$i++;
 		}
-		echo "</table><h3>total:".$response['invoice']['total_amount']."</h3><a href = \"createInvoice.php\"></div>";
+		echo "</table><h3>total:".$response['invoice']['total_amount']."</h3><a href = \"createInvoice.php\">go back</a></div>";
 	}
 }
 
